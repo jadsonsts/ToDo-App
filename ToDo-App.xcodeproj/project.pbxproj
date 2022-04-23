@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF27BBEB281269E20007370C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27BBEA281269E20007370C /* Todo.swift */; };
+		DF27BBED28126A5D0007370C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27BBEC28126A5D0007370C /* APIError.swift */; };
+		DF27BBF028126ABE0007370C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27BBEF28126ABE0007370C /* NetworkService.swift */; };
 		DFA20F96281172410071B89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20F95281172410071B89F /* AppDelegate.swift */; };
 		DFA20F98281172410071B89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20F97281172410071B89F /* SceneDelegate.swift */; };
-		DFA20F9A281172410071B89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20F99281172410071B89F /* ViewController.swift */; };
+		DFA20F9A281172410071B89F /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA20F99281172410071B89F /* TodoVC.swift */; };
 		DFA20F9D281172410071B89F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA20F9B281172410071B89F /* Main.storyboard */; };
 		DFA20F9F281172430071B89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA20F9E281172430071B89F /* Assets.xcassets */; };
 		DFA20FA2281172430071B89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA20FA0281172430071B89F /* LaunchScreen.storyboard */; };
+		DFDBA66028126274001B23BD /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDBA65F28126274001B23BD /* TodoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF27BBEA281269E20007370C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		DF27BBEC28126A5D0007370C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		DF27BBEF28126ABE0007370C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DFA20F92281172410071B89F /* ToDo-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA20F95281172410071B89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFA20F97281172410071B89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFA20F99281172410071B89F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFA20F99281172410071B89F /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
 		DFA20F9C281172410071B89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFA20F9E281172430071B89F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA20FA1281172430071B89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFA20FA3281172430071B89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFDBA65F28126274001B23BD /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF27BBEE28126AA30007370C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DF27BBEF28126ABE0007370C /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DFA20F89281172410071B89F = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +72,43 @@
 		DFA20F94281172410071B89F /* ToDo-App */ = {
 			isa = PBXGroup;
 			children = (
+				DF27BBEE28126AA30007370C /* Services */,
+				DFDBA65E281261B6001B23BD /* Model */,
+				DFDBA65D281261AB001B23BD /* View */,
+				DFDBA65C28126192001B23BD /* Controller */,
 				DFA20F95281172410071B89F /* AppDelegate.swift */,
 				DFA20F97281172410071B89F /* SceneDelegate.swift */,
-				DFA20F99281172410071B89F /* ViewController.swift */,
 				DFA20F9B281172410071B89F /* Main.storyboard */,
 				DFA20F9E281172430071B89F /* Assets.xcassets */,
 				DFA20FA0281172430071B89F /* LaunchScreen.storyboard */,
 				DFA20FA3281172430071B89F /* Info.plist */,
 			);
 			path = "ToDo-App";
+			sourceTree = "<group>";
+		};
+		DFDBA65C28126192001B23BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFA20F99281172410071B89F /* TodoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFDBA65D281261AB001B23BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFDBA65F28126274001B23BD /* TodoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFDBA65E281261B6001B23BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF27BBEA281269E20007370C /* Todo.swift */,
+				DF27BBEC28126A5D0007370C /* APIError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA20F9A281172410071B89F /* ViewController.swift in Sources */,
+				DFA20F9A281172410071B89F /* TodoVC.swift in Sources */,
 				DFA20F96281172410071B89F /* AppDelegate.swift in Sources */,
 				DFA20F98281172410071B89F /* SceneDelegate.swift in Sources */,
+				DFDBA66028126274001B23BD /* TodoCell.swift in Sources */,
+				DF27BBEB281269E20007370C /* Todo.swift in Sources */,
+				DF27BBED28126A5D0007370C /* APIError.swift in Sources */,
+				DF27BBF028126ABE0007370C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
